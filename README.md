@@ -6,10 +6,9 @@
   * Validation
   * Remise à blanc
 - 2 sous composants :
-  * 1 en affichage (detail)
+  * 1 en affichage (detail) :
     communique avec @Input
-  * l’autre en entrée (formulaire)
-
+  * l’autre en entrée (formulaire) :
     communique avec @Output / EventEmitter;
 - Bootstrap
 
