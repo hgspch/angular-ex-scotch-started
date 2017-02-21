@@ -1,6 +1,23 @@
 # Getting Started with Angular 2
 
-by Scotch.io
+- Master / detail
+
+- Formulaire
+  * Validation
+  * Remise à blanc
+- 2 sous composants :
+  * 1 en affichage (detail)
+    communique avec @Input
+  * l’autre en entrée (formulaire)
+
+    communique avec @Output / EventEmitter;
+- Bootstrap
+
+tourne avec Webpack
+
+_from Scotch.io_
+
+----------------
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
