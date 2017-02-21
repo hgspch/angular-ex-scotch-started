@@ -1,0 +1,43 @@
+<header>
+    <h1>Getting Started with Angular 2, by Scotch.io</h1>
+    <h2>Master / detail, form validation...</h2>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">Home</a><br>
+        </div>
+        <div class="container">
+            ...
+        </div>
+    </nav>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div *ngIf="users">
+                <ul class="list-group users-list">
+                    <li class="list-group-item"
+                        *ngFor="let user of users"
+                        (click)="selectUser(user)"
+                        [class.active]="user === activeUser">
+                        {{ user.name }} ({{ user.username }})
+                    </li>
+                </ul>
+            </div>
+            <user-form (userCreated)="onUserCreated($event)"></user-form>
+        </div>
+
+        <div class="col-sm-8">
+            <user-profile [user]="activeUser"></user-profile>
+
+            <div class="jumbotron" *ngIf="!activeUser">
+                <h2>Choose a User</h2>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center">
+    Copyright &copy; 2016
+</footer>
